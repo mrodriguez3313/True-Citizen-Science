@@ -11,3 +11,5 @@ main.go
   func scanLines(path):
     This function takes in a file and returns a string array with the contents of each file in each index.
     This is so a scanner object is only used once and the contents of the file persists for ease of use in main().
+
+*Want to make it so that this file takes in a new file, adds it to a certain collection that is the first token of the contents, then stores the contents'
