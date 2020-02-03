@@ -18,5 +18,5 @@ kill_scripts.sh
 script.sh
 	This is a script that called file_generator.py, but runs it in the background.
 
-###demo.sh
+demo.sh
 	This script is meant to automate the environment to autocreate and upload files into ipfs. It first starts a docker container called ipfsnode. This container should have been preset up to have go & ipfs installed in it as well as preconfigured to be connected to a private network. Then the script will run autoUpload and script.sh in the background so to free up your current terminal. after 20 seconds it will kill the processes with './kill_scrips.sh'
