@@ -1,0 +1,6 @@
+#!/bin/bash
+while read -r line || [[ -n "$line" ]]
+do
+	ipfs cat $line >> hash_outputs #appending what's in the hash to a file"
+	echo "" >> hash_outputs	
+done < "$1"
