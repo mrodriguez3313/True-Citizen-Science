@@ -1,0 +1,13 @@
+This directory contains the main database code written in Go:
+main.go
+  This file is the main code for creating and adding files into mongodb. This assumes you have mongodb-golang drivers installed
+  and in the same directory as this file. As well as the mongodb service running already. Consult the mongodb golang drivers
+  web page for most up to date instructions on how to install and run.
+  This program will use a file called hash_outputs. Parse the input between whats before the ';' sign and after. The collection
+  the file belongs to is the token before the ';'. The contents after the ';', is the content on the file that was added to ipfs.
+  Each file's content is on a new line in 'hash_outputs'.
+  'hash_outputs' is generated from a script in the parent directory called extract_hashes.
+
+  func scanLines(path):
+    This function takes in a file and returns a string array with the contents of each file in each index.
+    This is so a scanner object is only used once and the contents of the file persists for ease of use in main().
