@@ -1,6 +1,5 @@
 package main
 
-// json.Marshal turns your input into a json object as perfectly understood by Go.
 import (
 	"bufio"
 	"fmt"
