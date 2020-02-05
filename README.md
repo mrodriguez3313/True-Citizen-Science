@@ -11,6 +11,7 @@ The resulting hashes will be sent over to the researcher and from there the file
 
 An example of how the files in this repository tie in together is: 
 
+<img src="images/file_flow.jpg" >
 
 extract_hashes:
 	This file assumes that you have a file with hashes called 'Hashes'. The hashes are id's for files in ipfs.
