@@ -1,6 +1,9 @@
 #!/bin/bash
+# This file requires a file where each line is a hash of a file in IPFS as its one and only arguement.
 while read -r line || [[ -n "$line" ]]
 do
-	ipfs cat $line >> hash_outputs #appending what's in the hash to a file"
-	echo "" >> hash_outputs	
+	OUTPUT=`ipfs cat $line`
+	echo ${OUTPUT} > hash_outputs #appending what's in the hash to a file"
+	echo "" >> hash_outputs	#adding EOF character
+	go run main.go ~/Documents/InsightDC/src/main.go hash_outputs
 done < "$1"
