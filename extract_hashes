@@ -5,5 +5,5 @@ do
 	OUTPUT=`ipfs cat $line`
 	echo ${OUTPUT} > hash_outputs #appending what's in the hash to a file"
 	echo "" >> hash_outputs	#adding EOF character
-	go run main.go ~/Documents/InsightDC/src/main.go hash_outputs
+	go run ~/Documents/InsightDC/src/main.go hash_outputs
 done < "$1"
