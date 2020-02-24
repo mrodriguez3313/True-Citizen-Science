@@ -1,6 +1,4 @@
 #!/bin/bash
-# docker stop ipfsnode
-# docker start ipfsnode
 # rm -r ../filesdump; rm ../Hashes; rm ../hash_outputs
 ./script.sh &
 sleep 2

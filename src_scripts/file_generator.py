@@ -13,7 +13,7 @@ def create_files():
     for idx in range(files_to_create):
         with open("/home/marco/Documents/InsightDC/filesdump/hello_world{}.txt".format(int(round(time.time() * 10000))), "w") as f:
             f.write((''.join('{}; {}, {}'.format(random.choice(file_categories), threading.current_thread().ident, idx))))
-        time.sleep(1)
+        time.sleep(10)
     return
 
 def join_threads(threads):
